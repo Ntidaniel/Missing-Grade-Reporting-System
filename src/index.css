@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.links a.active{
+    color: rgb(36, 99, 247);
+}
