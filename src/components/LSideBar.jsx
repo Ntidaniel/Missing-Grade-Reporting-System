@@ -7,6 +7,8 @@ import PersonIcon from '@mui/icons-material/Person';
 import LogoutIcon from '@mui/icons-material/Logout';
 import MenuIcon from '@mui/icons-material/Menu';
 import ArrowBackOutlinedIcon from '@mui/icons-material/ArrowBackOutlined';
+import HelpOutlineOutlinedIcon from '@mui/icons-material/HelpOutlineOutlined';
+import CallOutlinedIcon from '@mui/icons-material/CallOutlined';
 
 function LSideBar() {
     const [collapsed,setCollapsed] = useState(false)
@@ -32,6 +34,14 @@ function LSideBar() {
                 <NavLink to='/courses' className={'flex items-center gap-2 p-2 ' + (collapsed? "justify-center" : "")} >
                     <MenuBookOutlinedIcon fontSize="medium" />
                     {!collapsed && <span>Courses </span>}
+                </NavLink>
+                <NavLink to='/contact' className={'flex items-center gap-2 p-2 ' + (collapsed? "justify-center" : "")} >
+                    <CallOutlinedIcon fontSize="medium" />
+                    {!collapsed && <span>Contact Instructor</span>}
+                </NavLink>
+                <NavLink to='/help' className={'flex items-center gap-2 p-2 ' + (collapsed? "justify-center" : "")} >
+                    <HelpOutlineOutlinedIcon fontSize="medium" />
+                    {!collapsed && <span>Help </span>}
                 </NavLink>
                 <NavLink to='' className={'flex items-center gap-2 p-2 ' + (collapsed? "justify-center" : "")} >
                     <PersonIcon fontSize="medium" />
