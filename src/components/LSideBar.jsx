@@ -12,6 +12,12 @@ import CallOutlinedIcon from '@mui/icons-material/CallOutlined';
 
 function LSideBar() {
     const [collapsed,setCollapsed] = useState(false)
+
+
+const logout = () => {
+    alert("logged out")
+}
+
   return (
     <div className={(collapsed? 'w-[100px] ' : "w-[300px] ") + "h-screen duration-300 flex flex-col items-center shadow-md sticky top-0"}>
         <button className={'w-full border p-4 flex items-center text-blue-950 ' + (collapsed? "justify-center" : "justify-between")} onClick={() => setCollapsed(!collapsed)}>
@@ -27,7 +33,7 @@ function LSideBar() {
             {collapsed && <p className='text-center text-2xl font-bold'>-</p>}
 
             <div className='w-full flex flex-col gap-2 mt-5 text-blue-950 text-lg links'>
-                <NavLink to='/dashboard' className={'flex items-center gap-2 p-2 ' + (collapsed? "justify-center" : "")} >
+                <NavLink to='/' className={'flex items-center gap-2 p-2 ' + (collapsed? "justify-center" : "")} >
                     <DashboardOutlinedIcon fontSize="medium"/>
                     {!collapsed && <span>Student Dashboard </span>}
                 </NavLink>
@@ -43,14 +49,14 @@ function LSideBar() {
                     <HelpOutlineOutlinedIcon fontSize="medium" />
                     {!collapsed && <span>Help </span>}
                 </NavLink>
-                <NavLink to='' className={'flex items-center gap-2 p-2 ' + (collapsed? "justify-center" : "")} >
+                <NavLink to='profile' className={'flex items-center gap-2 p-2 ' + (collapsed? "justify-center" : "")} >
                     <PersonIcon fontSize="medium" />
                     {!collapsed && <span>Profile</span>}
                 </NavLink>
-                <NavLink to='' className={'flex items-center gap-2 p-2 ' + (collapsed? "justify-center" : "")} >
+                <p onClick={logout} className={'flex items-center gap-2 p-2 cursor-pointer ' + (collapsed? "justify-center" : "")} >
                     <LogoutIcon fontSize="medium" />
                     {!collapsed && <span>Logout</span>}
-                </NavLink>
+                </p>
             </div>
         </div>
     </div>

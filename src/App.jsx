@@ -7,6 +7,7 @@ import Help from "./pages/Help"
 import Contact from "./pages/Contact"
 import ContactSupport from "./components/TechnicalSuppot"
 import Faq from "./components/Faq"
+import Profile from "./pages/Profile"
 
 function App() {
 const router = createBrowserRouter(
@@ -17,10 +18,6 @@ const router = createBrowserRouter(
        children: [
          {
           index: true,
-          element: <Home />,
-         },
-         {
-          path: "dashboard",
           element: <StDashBoard />
          },
          {
@@ -44,6 +41,10 @@ const router = createBrowserRouter(
          {
           path: "contact",
           element: <Contact />
+         },
+         {
+          path: "profile",
+          element: <Profile />
          }
        ]
     }
