@@ -10,7 +10,7 @@ function Layout() {
       <LSideBar />
       <div className='w-full'>
         <Header />
-        <div className='p-4 bg-black/5 min-h-screen'>
+        <div className='p-2 md:p-4 bg-black/5 min-h-screen'>
          <Outlet />
         </div>
         <Footer />

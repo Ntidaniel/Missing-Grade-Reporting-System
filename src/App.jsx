@@ -1,4 +1,4 @@
-import { createBrowserRouter,RouterProvider,Route } from "react-router-dom"
+import { createBrowserRouter,RouterProvider } from "react-router-dom"
 import Layout from "./pages/Layout"
 import Home from "./pages/Home"
 import StDashBoard from "./pages/StDashBoard"
@@ -8,12 +8,23 @@ import Contact from "./pages/Contact"
 import ContactSupport from "./components/TechnicalSuppot"
 import Faq from "./components/Faq"
 import Profile from "./pages/Profile"
+import LoginPage from "./pages/Login"
+import Landingpage from "./pages/Landingpage"
+import MissingGradeForm from "./pages/MissingGradeForm"
 
 function App() {
 const router = createBrowserRouter(
   [
     {
-       path: "/",
+      path: "/",
+      element: <Landingpage />
+    },
+    {
+      path: "/login",
+      element: <LoginPage />
+    },
+    {
+       path: "/0",
        element: <Layout />,
        children: [
          {
@@ -23,6 +34,10 @@ const router = createBrowserRouter(
          {
           path: "courses",
           element: <Courses />
+         },
+         {
+          path: "reportgrade",
+          element: <MissingGradeForm />
          },
          {
           path: "help",

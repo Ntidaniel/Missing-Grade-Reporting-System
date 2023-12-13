@@ -32,7 +32,7 @@ const ContactSupport = () => {
 
         <div className="flex items-center">
           <button type="submit" className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">Submit</button>
-          <span className="ml-2 text-gray-600">or call us at: <strong>(555) 123-4567</strong></span>
+          <span className="ml-2 text-gray-600">or call us at: <strong>(233) 123-4567</strong></span>
         </div>
       </form>
     </div>

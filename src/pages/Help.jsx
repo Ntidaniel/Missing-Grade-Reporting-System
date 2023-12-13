@@ -8,7 +8,7 @@ const Help = () => {
   return (
     <div className=" w-full mx-auto my-8 px-4">
         <div className='p-2 flex gap-2'>
-            <NavLink to='/help' className='text-xl font-bold px-5 py-2 bg-blue-500 text-white rounded'>FAQ</NavLink>
+            <NavLink to='/0/help' className='text-xl font-bold px-5 py-2 bg-blue-500 text-white rounded'>FAQ</NavLink>
             <NavLink to='technicalsupport' className='text-xl font-bold px-5 bg-gray-400 p-2 rounded text-white'>Contact Technical support</NavLink>
         </div>
      {/*  {faqs.map((faq, index) => (

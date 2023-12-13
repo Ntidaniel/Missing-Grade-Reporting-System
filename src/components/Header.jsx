@@ -6,7 +6,7 @@ import NotificationsNoneOutlinedIcon from '@mui/icons-material/NotificationsNone
 function Header() {
  
   return (
-    <div className='w-full border-b p-4 flex justify-between items-center shadow-md sticky top-0 bg-white/90 backdrop-blur'>
+    <div className='w-full border-b p-4 flex justify-between items-center shadow sticky top-0 bg-white/90 backdrop-blur'>
       <div>
           <input type="text" placeholder='search ' className='border p-2 px-4'/>
       </div>
